@@ -6,10 +6,7 @@
  * Time: 3:19 PM
  */
 
-$test_text = $_POST["test_text"];
-echo "->" + $test_text;
 $entry_date = $_POST["entry_date"];
-echo "->" + $entry_date;
 $start_time = $_POST["start_time"];
 $end_time = $_POST["end_time"];
 $launch_duration = $_POST["launch_duration"];
@@ -22,11 +19,11 @@ if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$sql = "INSERT INTO tbl_work_time_tracker ( date, start_time, end_time, $launch_duration) VALUES ( '$entry_date', '$start_time', '$end_time', '$launch_duration')";
+$sql = "INSERT INTO tbl_work_time_tracker ( date, start_time, end_time, launch_duration) VALUES ( '$entry_date', '$start_time', '$end_time', '$launch_duration')";
 echo $sql;
-//if (!mysqli_query($con, $sql)) {
-//    die('Error: ' . mysqli_error($con));
-//}
+if (!mysqli_query($con, $sql)) {
+    die('Error: ' . mysqli_error($con));
+}
 
 mysqli_close($con);
 ?>
