@@ -20,7 +20,6 @@ if (mysqli_connect_errno()) {
 }
 
 $sql = "INSERT INTO tbl_work_time_tracker ( date, start_time, end_time, launch_duration) VALUES ( '$entry_date', '$start_time', '$end_time', '$launch_duration')";
-echo $sql;
 if (!mysqli_query($con, $sql)) {
     die('Error: ' . mysqli_error($con));
 }
