@@ -48,6 +48,7 @@ mysqli_close($con);
         </div>
         <a href="add-entry.html" class="list-group-item">Add another entry</a>
         <a href="index.html" class="list-group-item">Home page</a>
+        <a href="history.php" class="list-group-item">History</a>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery.js"></script>
