@@ -1,8 +1,7 @@
 {% extends '::base.html.twig' %}
 {% block title %}My Time Sheet{% endblock %}
 {% block stylesheets %}
-	{#<link href="css/bootstrap.min.css" rel="stylesheet">#}
-	{#<link rel="stylesheet" href="{{ asset('bundles/phoenix/timetracker/css/bootstrap.min.css') }}" type="text/css"/>#}
+	<link rel="stylesheet" href="{{ asset('bundles/timetracker/css/bootstrap.min.css') }}" type="text/css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 {% endblock %}
 {% block body %}
@@ -18,5 +17,5 @@
 {% endblock %}
 {% block javascripts %}
 	<script src="https://code.jquery.com/jquery.js"></script>
-	{#<script src="js/bootstrap.min.js"></script>#}
+	<script src="{{ asset('bundles/timetracker/js/bootstrap.min.js') }}"></script>
 {% endblock %}
