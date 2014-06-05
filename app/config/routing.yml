@@ -1,0 +1,3 @@
+phoenix_time_tracker:
+    resource: "@TimeTrackerBundle/Resources/config/routing.yml"
+    prefix:   /
