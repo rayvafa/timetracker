@@ -1,18 +1,12 @@
 {% extends '::base.html.twig' %}
-{% block title %}My Time Sheet{% endblock %}
+{% block title %}Add an entry{% endblock %}
 {% block stylesheets %}
 	<link rel="stylesheet" href="{{ asset('bundles/timetracker/css/bootstrap.min.css') }}" type="text/css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 {% endblock %}
 {% block body %}
 	<div class="container">
-		<br/>
-		<div class="list-group">
-			<a href="{{ path('add_entry') }}" class="list-group-item">Add an entry</a>
-		</div>
-		<div class="list-group">
-			<a href="{{ path('history') }}" class="list-group-item">History</a>
-		</div>
+		<h6>add entry</h6>
 	</div>
 {% endblock %}
 {% block javascripts %}

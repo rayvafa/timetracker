@@ -13,4 +13,16 @@ class TimeTrackerController extends Controller{
 			'TimeTrackerBundle:TimeTracker:index.html.twig'
 		);
 	}
+
+	public function addAction() {
+		return $this->render(
+			'TimeTrackerBundle:TimeTracker:add.html.twig'
+		);
+	}
+
+	public function historyAction() {
+		return $this->render(
+			'TimeTrackerBundle:TimeTracker:history.html.twig'
+		);
+	}
 }

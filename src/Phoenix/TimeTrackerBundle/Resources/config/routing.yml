@@ -1,3 +1,11 @@
 home:
   path: /
   defaults: { _controller: TimeTrackerBundle:TimeTracker:index}
+
+add_entry:
+  path: /add
+  defaults: { _controller: TimeTrackerBundle:TimeTracker:add}
+
+history:
+  path: /history
+  defaults: { _controller: TimeTrackerBundle:TimeTracker:history}
