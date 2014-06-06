@@ -26,7 +26,7 @@ CREATE TABLE `tbl_work_time_tracker` (
   `date` date NOT NULL,
   `start_time` time NOT NULL,
   `end_time` time NOT NULL,
-  `lauch_duration` time NOT NULL,
+  `lunch_duration` time NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `date_unq` (`date`) USING HASH
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
