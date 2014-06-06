@@ -23,10 +23,10 @@
 						{% for track in tracks %}
 							<tr>
 								<td>{{ track.id }}</td>
-								<td>{{ track.date|date('Y-m-d') }}</td>
-								<td>{{ track.startTime|date('Y-m-d') }}</td>
-								<td>{{ track.endTime|date('Y-m-d') }}</td>
-								<td>{{ track.lunchDuration|date('Y-m-d') }}</td>
+								<td>{{ track.date|date('Y/m/d') }}</td>
+								<td>{{ track.startTime|date('H:i') }}</td>
+								<td>{{ track.endTime|date('H:i') }}</td>
+								<td>{{ track.lunchDuration|date('H:i') }}</td>
 								<td>0</td>
 							</tr>
 						{% endfor %}

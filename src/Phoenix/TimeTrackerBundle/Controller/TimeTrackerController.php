@@ -47,7 +47,7 @@ class TimeTrackerController extends Controller{
 	}
 
 	public function historyAction() {
-		// todo format history page dates
+		// todo history page needs sums 
 
 		$repository = $this->getDoctrine()->getRepository('TimeTrackerBundle:WorkTimeTracker');
 		$tracks = $repository->findAll();
